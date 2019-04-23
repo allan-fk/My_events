@@ -1,0 +1,14 @@
+.Menue {
+    height: 100%;
+}
+
+.dropdown-menu {
+    width: 100%;
+    position: inherit;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.col-sm-2 {
+    max-width: unset;
+}
