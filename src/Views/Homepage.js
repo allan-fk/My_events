@@ -1,28 +1,25 @@
-import React from 'react';
-import { List, Header, Menue, Search, Osm }  from '../Components';
-import { Row, Col }  from 'react-bootstrap';
-import '../Stylesheet/views/Homepage.css';
+import React, { Component } from 'react';
+// Material
+import Button from '@material-ui/core/Button';
+// Styled Components
+import styled from 'styled-components';
+import Header from '../Components/Header';
+import ImgTransition from '../Components/ImgTransition';
 
-export default class Homepage extends React.Component  {
+export default class Homepage extends Component {
   render() {
     return (
-      <div className="App">
-        <div className='Container-full'>
-          <Header />
-          <Row>
-            <Col sm={2}>
-              <Menue />
-            </Col>
-            <Col sm={6}>
-              <Search />
-              <List />
-            </Col>
-            <Col sm={3}>
-              <Osm />
-            </Col>
-          </Row>
-        </div>
-      </div>
+      <Body>
+        <Header />
+        <ImgTransition />
+        {/*<MyButton variant="contained" color="primary">
+          Hello World
+    </MyButton>*/}
+      </Body>
     );
   }
 }
+const Body = styled.div`
+    background-color: black;
+  `,
+  MyButton = styled(Button)``;
